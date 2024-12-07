@@ -1,0 +1,258 @@
+.container
+  :is(
+    .row1,
+    .row2,
+    .row3,
+    .row4,
+    .row5,
+    .row6,
+    .row7,
+    .row8,
+    .row9,
+    .row10,
+    .row11
+  ) {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 10px;
+  padding-top: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cell {
+  aspect-ratio: 1;
+  background-color: #e5e5e5;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.cell:hover {
+  transform: scale(1.1);
+  background-color: #b7b7b7;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.cell {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.container {
+  counter-reset: cell-counter;
+}
+
+.cell {
+  counter-increment: cell-counter;
+  animation-delay: calc(0.05s * var(--index));
+}
+
+.row1 > :nth-child(6){
+  background-color: green;
+}
+.row2 > :nth-child(6){
+  background-color: green;
+}
+.row3 > :nth-child(5){
+  background-color: green;
+}
+.row3 > :nth-child(6){
+  background-color: yellow;
+}
+.row3 > :nth-child(7){
+  background-color: green;
+}
+.row4 > :nth-child(4){
+  background-color: green;
+}
+.row4 > :nth-child(5){
+  background-color: green;
+}
+.row4 > :nth-child(6){
+  background-color: green;
+}
+.row4 > :nth-child(7){
+  background-color: yellow;
+}
+.row4 > :nth-child(8){
+  background-color: green;
+}
+.row5 > :nth-child(4){
+  background-color: green;
+}
+.row5 > :nth-child(5){
+  background-color: green;
+}
+.row5 > :nth-child(6){
+  background-color: green;
+}
+.row5 > :nth-child(7){
+  background-color: green;
+}
+.row5 > :nth-child(8){
+  background-color: green;
+}
+.row6 > :nth-child(3){
+  background-color: green;
+}
+.row6 > :nth-child(4){
+  background-color: green;
+}
+.row6 > :nth-child(5){
+  background-color: green;
+}
+.row6 > :nth-child(6){
+  background-color: yellow;
+}
+.row6 > :nth-child(7){
+  background-color: green;
+}
+.row6 > :nth-child(8){
+  background-color: green;
+}
+.row6 > :nth-child(9){
+  background-color: green;
+}
+.row7 > :nth-child(2){
+  background-color: green;
+}
+.row7 > :nth-child(3){
+  background-color: green;
+}
+.row7 > :nth-child(4){
+  background-color: yellow;
+}
+.row7 > :nth-child(5){
+  background-color: green;
+}
+.row7 > :nth-child(6){
+  background-color: green;
+}
+.row7 > :nth-child(7){
+  background-color: green;
+}
+.row7 > :nth-child(8){
+  background-color: green;
+}
+.row7 > :nth-child(9){
+  background-color: green;
+}
+.row7 > :nth-child(10){
+  background-color: yellow;
+}
+.row8 > :nth-child(2){
+  background-color: green;
+}
+.row8 > :nth-child(3){
+  background-color: green;
+}
+.row8 > :nth-child(4){
+  background-color: green;
+}
+.row8 > :nth-child(5){
+  background-color: yellow;
+}
+.row8 > :nth-child(6){
+  background-color: green;
+}
+.row8 > :nth-child(7){
+  background-color: green;
+}
+.row8 > :nth-child(8){
+  background-color: yellow;
+}
+.row8 > :nth-child(9){
+  background-color: green;
+}
+.row8 > :nth-child(10){
+  background-color: green;
+}
+.row9 > :nth-child(1){
+  background-color: green;
+}
+.row9 > :nth-child(2){
+  background-color: yellow;
+}
+.row9 > :nth-child(3){
+  background-color: green;
+}
+.row9 > :nth-child(4){
+  background-color: green;
+}
+.row9 > :nth-child(5){
+  background-color: green;
+}
+.row9 > :nth-child(6){
+  background-color: green;
+}
+.row9 > :nth-child(7){
+  background-color: green;
+}
+.row9 > :nth-child(8){
+  background-color: green;
+}
+.row9 > :nth-child(9){
+  background-color: green;
+}
+.row9 > :nth-child(10){
+  background-color: yellow;
+}
+.row9 > :nth-child(11){
+  background-color: green;
+}
+.row10 > :nth-child(1){
+  background-color: green;
+}
+.row10 > :nth-child(2){
+  background-color: green;
+}
+.row10 > :nth-child(3){
+  background-color: green;
+}
+.row10 > :nth-child(4){
+  background-color: yellow;
+}
+.row10 > :nth-child(5){
+  background-color: green;
+}
+.row10 > :nth-child(6){
+  background-color: green;
+}
+.row10 > :nth-child(7){
+  background-color: yellow;
+}
+.row10 > :nth-child(8){
+  background-color: green;
+}
+.row10 > :nth-child(9){
+  background-color: green;
+}
+.row10 > :nth-child(10){
+  background-color: green;
+}
+.row10 > :nth-child(11){
+  background-color: green;
+}
+.row11 > :nth-child(5){
+  background-color: brown;
+}
+.row11 > :nth-child(6){
+  background-color: brown;
+}
+.row11 > :nth-child(7){
+  background-color: brown;
+}
+
+
+
+
