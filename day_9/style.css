@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(169, 25, 25);
+  text-align: center;
+  cursor: url(Christmas\ Fat\ Cat.cur);
+  
+}
+
+p{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#cat{cursor: url(Christmas\ Fat\ Cat.cur), auto;
+  
+}
+
+
+.dog{cursor: url(Christmas\ Cool\ Dog.cur), auto;}
+
+.santa{cursor: url(tree.cur), auto;
+color: antiquewhite;}
+
+.snowflake{cursor: url(Christmas\ Snowflake.cur),wait;
+  color: antiquewhite;}
+
+.owl{cursor: url(owl\ left\ select.cur),wait;}
+
+#flying{
+  width: 50px;
+  height: 50px;
+  border: 2px solid #0ff;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+  transition: transform 0.1s, box-shadow 0.1s;
+  transform: translate(-50%, -50%);
+}
+
