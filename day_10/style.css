@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(60, 161, 164);
+  text-align: center;
+}
+
+p{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+img{
+  width: 60%;
+}
