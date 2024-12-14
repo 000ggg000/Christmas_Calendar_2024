@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day_14</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+
+
+    </style>
+</head>
+<body>
+<h1 style="font-weight: 600;">🎅 🎁 The Gift Exchange  🎁 🦌</h1>
+
+<br>
+<p >To sum up how many got the gift they wished for, the correct answer would be as following the query: </p>
+<span>SELECT COUNT(gift_exchanges.receiver_id) 
+    FROM gift_exchanges JOIN user_wishlists  
+    ON gift_exchanges.gift_name = user_wishlists.gift_name 
+    WHERE user_wishlists.wishlist_id = gift_exchanges.exchange_id;</span>
+<p>The result is: no one... ;/ </p>
+<img src="reindeer_gift.png" alt="reindeerWithAGift">
+<br>
+<br>
+<br>
+
+
+</body>
+</html>
