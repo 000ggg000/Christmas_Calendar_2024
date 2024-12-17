@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(160, 6, 6);
+  text-align: center;
+  color: rgb(6, 18, 6);
+  font-family:'Courier New', Courier, monospace;
+}
+
+h1{
+  font-size: 40px;
+  color: rgb(67, 220, 169);
+}
+
+h2{
+  font-size: 30px;
+  color: rgb(37, 148, 111);
+}
+
+p {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(51, 118, 77);
+}
+
+img {
+  width: 25%;
+}
