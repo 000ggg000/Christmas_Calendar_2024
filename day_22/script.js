@@ -5,7 +5,8 @@ function predictSnowfall(temperatures, humidity) {
   let willSnow = false;
   let expectedDepth = 0;
 
-  const temperatureAverage = temperatures.reduce((a, b) => a + b) / temperatures.length;
+  const temperatureAverage =
+    temperatures.reduce((a, b) => a + b) / temperatures.length;
 
   if (temperatureAverage < 0) {
     snowProbability = snowProbability + 35;
@@ -15,12 +16,15 @@ function predictSnowfall(temperatures, humidity) {
   }
   if (snowProbability > 70) {
     willSnow = true;
-    expectedDepth = Math.round((100 - temperatureAverage) * humidity / 100);
+    expectedDepth = Math.round(((100 - temperatureAverage) * humidity) / 100);
   }
 
-  return { 'willSnow': willSnow, 'probability': snowProbability, 'expectedDepth': expectedDepth};
+  return {
+    willSnow: willSnow,
+    probability: snowProbability,
+    expectedDepth: expectedDepth,
+  };
 }
-
 
 let prediction1 = predictSnowfall(
   [
@@ -38,7 +42,5 @@ let prediction2 = predictSnowfall(
   60
 );
 
-
 console.log(prediction1); //output: { willSnow: true, probability: 75, expectedDepth: 93 }
 console.log(prediction2); // output: { willSnow: false, probability: 35, expectedDepth: 0 }
-
